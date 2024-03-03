@@ -1,0 +1,145 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1918115200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the codefios login page",
+            "match": {
+              "location": "steps.StepDefinition.user_is_on_the_codefios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-10T23:11:53.740Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2575610000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "User should be able to login with valid credential",
+        "description": "",
+        "id": "codefios-page-login-functionality-validation;user-should-be-able-to-login-with-valid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 472310600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinition.afterRun()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1461153700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.StepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 552586900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.StepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2251574700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.StepDefinition.user_clicks_on_the_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Welcome To Codefios expected [Codefios QA] but found [Page not landed on Dashboard page]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:629)\r\n\tat steps.StepDefinition.user_should_be_able_to_land_on_dashboard_page(StepDefinition.java:55)\r\n\tat ✽.User should be able to land on dashboard page(classpath:features/LoginWithDataFromMySqlDatabase.feature:13)\r\n",
+              "duration": 353349900,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "User should be able to land on dashboard page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DataFromMySqlFeature"
+          },
+          {
+            "name": "@DBScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Codefios page login functionality validation",
+    "description": "",
+    "id": "codefios-page-login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/LoginWithDataFromMySqlDatabase.feature",
+    "tags": [
+      {
+        "name": "@DataFromMySqlFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
